@@ -1,16 +1,15 @@
-const sections = document.querySelectorAll('.section');
-
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.style.opacity = 1;
-      entry.target.style.transform = "translateY(0)";
-    }
+// Smooth scroll
+document.querySelectorAll("nav a").forEach(link => {
+  link.addEventListener("click", e => {
+    e.preventDefault();
+    document.querySelector(link.getAttribute("href"))
+      .scrollIntoView({ behavior: "smooth" });
   });
-}, { threshold: 0.2 });
+});
 
-sections.forEach(section => {
-  section.style.opacity = 0;
-  section.style.transform = "translateY(40px)";
-  observer.observe(section);
+// Contact form demo
+document.querySelector(".contact-form").addEventListener("submit", e => {
+  e.preventDefault();
+  alert("Thank you Shaik Naseer! Message sent (demo).");
+  e.target.reset();
 });
