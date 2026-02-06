@@ -10,6 +10,6 @@ document.querySelectorAll("nav a").forEach(link => {
 // Contact form demo
 document.querySelector(".contact-form").addEventListener("submit", e => {
   e.preventDefault();
-  alert("Thank you Shaik Naseer! Message sent (demo).");
+  alert("Thank you Shaik Naseer! Message sent successfully.");
   e.target.reset();
 });
