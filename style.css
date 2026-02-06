@@ -8,20 +8,25 @@
 body {
   background: #0b0b0b;
   color: #f5f5f5;
+  line-height: 1.6;
 }
 
-/* NAV */
+/* ---------------- NAVBAR ---------------- */
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 70px;
   background: #000;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .logo {
   color: #e10600;
   font-size: 24px;
+  font-weight: bold;
 }
 
 nav ul {
@@ -29,16 +34,21 @@ nav ul {
   gap: 25px;
 }
 
+nav ul li {
+  list-style: none;
+}
+
 nav a {
   color: white;
   text-decoration: none;
+  font-weight: 500;
 }
 
 nav a:hover {
   color: #e10600;
 }
 
-/* HERO */
+/* ---------------- HERO ---------------- */
 .hero {
   min-height: 100vh;
   display: grid;
@@ -51,21 +61,32 @@ nav a:hover {
   font-size: 48px;
 }
 
+.hero-text h2 {
+  font-size: 36px;
+  margin: 10px 0;
+}
+
 .hero-text span {
   color: #e10600;
 }
 
-.hero-text p {
-  margin: 15px 0;
+.hero-text h3 {
   color: #ccc;
+}
+
+.hero-text p {
+  margin: 15px 0 25px;
+  color: #bfbfbf;
+  max-width: 500px;
 }
 
 .hero-buttons a {
   margin-right: 15px;
-  padding: 12px 26px;
+  padding: 12px 28px;
   border-radius: 30px;
   text-decoration: none;
   font-weight: 600;
+  transition: 0.3s;
 }
 
 .btn-primary {
@@ -82,52 +103,97 @@ nav a:hover {
   color: #e10600;
 }
 
+.btn-outline:hover {
+  background: #e10600;
+  color: white;
+}
+
 .hero-img img {
   width: 300px;
   border-radius: 50%;
   border: 4px solid #e10600;
 }
 
-/* SECTIONS */
+/* ---------------- SECTIONS ---------------- */
 .section {
   padding: 90px 80px;
+}
+
+.section h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
 }
 
 .dark {
   background: #111;
 }
 
-/* SKILLS */
+/* ---------------- SKILLS ---------------- */
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   gap: 15px;
 }
 
 .skills-grid span {
   background: #1a1a1a;
-  padding: 12px;
-  border-radius: 8px;
+  padding: 14px;
+  border-radius: 10px;
   text-align: center;
+  transition: 0.3s;
 }
 
-/* PROJECTS */
+.skills-grid span:hover {
+  background: #e10600;
+  color: white;
+}
+
+/* ---------------- PROJECTS ---------------- */
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
 }
 
+/* Animation base */
 .card {
   background: #111;
-  padding: 20px;
-  border-radius: 12px;
+  padding: 25px;
+  border-radius: 15px;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
 }
 
-/* CONTACT */
+.card.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  color: #e10600;
+}
+
+.card p {
+  color: #ccc;
+}
+
+.project-img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  transition: transform 0.6s ease;
+}
+
+.card:hover .project-img {
+  transform: scale(1.05);
+}
+
+/* ---------------- CONTACT ---------------- */
 .contact-section {
   background: linear-gradient(135deg, #000, #e10600);
-  padding: 80px;
+  padding: 90px 80px;
 }
 
 .contact-wrapper {
@@ -146,11 +212,17 @@ nav a:hover {
   display: inline-block;
   margin-top: 15px;
   margin-right: 15px;
-  color: black;
   background: white;
+  color: black;
   padding: 8px 18px;
   border-radius: 20px;
   text-decoration: none;
+  transition: 0.3s;
+}
+
+.social-links a:hover {
+  background: black;
+  color: white;
 }
 
 /* FORM */
@@ -161,6 +233,7 @@ nav a:hover {
   margin-bottom: 15px;
   border-radius: 10px;
   border: none;
+  outline: none;
 }
 
 .contact-form button {
@@ -170,13 +243,14 @@ nav a:hover {
   background: black;
   color: white;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 .contact-form button:hover {
   background: #222;
 }
 
-/* RESPONSIVE */
+/* ---------------- RESPONSIVE ---------------- */
 @media (max-width: 900px) {
   .hero,
   .contact-wrapper {
@@ -187,8 +261,11 @@ nav a:hover {
   nav {
     padding: 20px 30px;
   }
-}
 
+  .section {
+    padding: 70px 30px;
+  }
+}
 
   nav {
     padding: 20px 30px;
