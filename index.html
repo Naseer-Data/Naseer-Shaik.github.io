@@ -1,164 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shaik Naseer | Entry Level Data Scientist</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <title>Shaik Naseer |Entry Level Data Scientist</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
 </head>
 <body>
 
-<!-- NAVBAR -->
-<nav>
-  <h2 class="logo">Shaik Naseer</h2>
-  <ul>
-    <li><a href="#home">Home</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
-
 <!-- HERO -->
-<section id="home" class="hero">
-  <div class="hero-text">
-    <h1>Hello.</h1>
-    <h2>I’m <span>Shaik Naseer</span></h2>
-    <h3>Data Scientist | Machine Learning | NLP | Deep Learning</h3>
-    <p>
-      Aspiring Data Scientist with hands-on experience in Python,
-      Machine Learning, NLP, and Data Analysis. Passionate about
-      building data-driven solutions.
-    </p>
-
-    <div class="hero-buttons">
-      <a href="#contact" class="btn-primary">Hire Me</a>
-      <a href="resume.pdf" target="_blank" class="btn-outline">My Resume</a>
-    </div>
-  </div>
-
-  <div class="hero-img">
-    <img src="profile.jpg" alt="profile.jpg">
+<section class="hero">
+  <h1>Hello, I’m <span>Shaik Naseer</span></h1>
+  <p> Entry Level Data Scientist | Machine Learning | NLP</p>
+  <div class="buttons">
+    <a href="#contact" class="btn primary">Hire Me</a>
+    <a href="Shaik Naseer - Resume .pdf" class="btn outline" download>My Resume</a>
   </div>
 </section>
 
 <!-- ABOUT -->
-<section id="about" class="section">
+<section id="about" class="about fade-in">
   <h2>About Me</h2>
-  <p>
-    I am a Data Science enthusiast with strong foundations in Python,
-    Machine Learning, and Natural Language Processing. I have worked on
-    real-world datasets, built ML models, and performed data analysis
-    to extract meaningful insights. I am eager to grow as a Data Scientist
-    and contribute to impactful projects.
-  </p>
+
+  <div class="about-container">
+    <img src="images/profile.jpg" alt="Shaik Naseer" class="profile.jpg">
+
+    <div class="about-text">
+      <p>
+        I am a passionate <strong>Data Scientist</strong> with strong knowledge in 
+        <strong>Python, Machine Learning, Deep Learning, and NLP</strong>.
+      </p>
+      <p>
+        I enjoy analyzing data, building predictive models, and solving real-world
+        problems using data-driven approaches.
+      </p>
+      <p>
+        I have hands-on experience in data analysis, model building, and visualization,
+        and I am continuously improving my skills to grow as a data professional.
+      </p>
+    </div>
+  </div>
 </section>
 
 <!-- SKILLS -->
-<section id="skills" class="section dark">
-  <h2>Technical Skills</h2>
+<section id="skills" class="skills">
+  <h2>My Skills</h2>
 
   <div class="skills-grid">
-
-    <!-- Programming -->
-    <span>Python</span>
-    <span>SQL</span>
-
-    <!-- Data Analysis -->
-    <span>Pandas</span>
-    <span>NumPy</span>
-    <span>Seaborn</span>
-    <span>Exploratory Data Analysis (EDA)</span>
-    <span>Data Cleaning</span>
-
-    <!-- Machine Learning -->
-    <span>Machine Learning</span>
-    <span>Supervised Learning</span>
-    <span>Unsupervised Learning</span>
-    <span>Classification Algorithms</span>
-    <span>Regression Algorithms</span>
-    
-
-    <!-- NLP (basic – resume aligned) -->
-    <span>Natural Language Processing (NLP)</span>
-    <span>Text Preprocessing</span>
-    
-
-    <!-- Tools -->
-    <span>Jupyter Notebook</span>
-    <span>GitHub</span>
-
+    <div class="skill-card fade-in">Python</div>
+    <div class="skill-card fade-in">Machine Learning</div>
+    <div class="skill-card fade-in">Deep Learning</div>
+    <div class="skill-card fade-in">NLP</div>
+    <div class="skill-card fade-in">Pandas</div>
+    <div class="skill-card fade-in">NumPy</div>
+    <div class="skill-card fade-in">Scikit-Learn</div>
+    <div class="skill-card fade-in">TensorFlow</div>
+    <div class="skill-card fade-in">SQL</div>
+    <div class="skill-card fade-in">Data Visualization</div>
   </div>
 </section>
 
 <!-- PROJECTS -->
-<section id="projects" class="section">
+<section id="projects" class="projects">
   <h2>Projects</h2>
 
   <div class="project-grid">
-
-    <!-- Project 1 -->
-    <div class="card">
+    <div class="project-card fade-in">
+      <img src="images/churn.jpg" alt="Customer Churn">
       <h3>Customer Churn Prediction</h3>
       <p>
-        Developed a machine learning model to predict customer churn by
-        analyzing customer behavior and historical data. Performed data
-        preprocessing, exploratory data analysis, feature selection, and
-        applied classification algorithms to identify customers likely
-        to leave the service.
-      </p>
-      <p>
-        <strong>Technologies:</strong> Python, Pandas, NumPy, Scikit-learn,
-        Machine Learning
+        Built machine learning models to predict customer churn using
+        Python, Pandas, and Scikit-learn.
       </p>
     </div>
 
-    <!-- Project 2 -->
-    <div class="card">
-      <h3>COVID-19 Data Analysis</h3>
+    <div class="project-card fade-in">
+      <img src="images/covid.jpg" alt="Covid Analysis">
+      <h3>Covid-19 Data Analysis</h3>
       <p>
-        Conducted an in-depth analysis of COVID-19 datasets to understand
-        trends in confirmed cases, recoveries, and deaths. Performed data
-        cleaning, visualization, and statistical analysis to derive
-        meaningful insights and present findings clearly.
-      </p>
-      <p>
-        <strong>Technologies:</strong> Python, Pandas, NumPy, Matplotlib,
-        Data Analysis
+        Analyzed Covid-19 trends using Python and data visualization
+        techniques to derive insights.
       </p>
     </div>
-
   </div>
 </section>
-
 
 <!-- CONTACT -->
-<section id="contact" class="contact-section">
-  <div class="contact-wrapper">
-
-    <div class="contact-info">
-      <h2>Contact Me</h2>
-      <p><strong>Name:</strong> Shaik Naseer</p>
-      <p><strong>Email:</strong> naseershaikdpts@gmail.com</p>
-      <p><strong>Location:</strong> India</p>
-
-      <div class="social-links">
-        <a href="https://github.com/Naseer-Data" target="_blank">GitHub</a>
-        <a href="www.linkedin.com/in/shaik-naseer-172785294" target="_blank">LinkedIn</a>
-      </div>
-    </div>
-
-    <form class="contact-form">
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea rows="4" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-
+<section id="contact" class="contact">
+  <div class="contact-left">
+    <h2>Contact Me</h2>
+    <p><strong>Name:</strong> Shaik Naseer</p>
+    <p><strong>Email:</strong> naseershaikdpts@gmail.com</p>
+    <p><strong>Location:</strong> India</p>
+    <p>
+      <a href="#"https://github.com/Naseer-Data></a> |
+      <a href="#">www.linkedin.com/in/shaik-naseer-172785294</a>
+    </p>
   </div>
+
+  <form class="contact-form">
+    <input type="text" placeholder="Your Name" required />
+    <input type="email" placeholder="Your Email" required />
+    <textarea placeholder="Your Message"></textarea>
+    <button type="submit">Send Message</button>
+  </form>
 </section>
 
-<script src="script.js"></script>
 </body>
 </html>
+
