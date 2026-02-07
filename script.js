@@ -6,17 +6,16 @@ function revealOnScroll() {
 
   fadeElements.forEach((el, index) => {
     const elementTop = el.getBoundingClientRect().top;
-    const revealPoint = 100;
+    const revealPoint = 120;
 
     if (elementTop < windowHeight - revealPoint) {
       setTimeout(() => {
         el.style.opacity = "1";
         el.style.transform = "translateY(0)";
-      }, index * 120); // smooth stagger effect
+      }, index * 120);
     }
   });
 }
 
-// Run on load and scroll
 window.addEventListener("scroll", revealOnScroll);
 window.addEventListener("load", revealOnScroll);
