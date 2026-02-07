@@ -1,38 +1,22 @@
-/* -------- Smooth Scroll -------- */
-document.querySelectorAll("nav a").forEach(link => {
-  link.addEventListener("click", e => {
-    e.preventDefault();
-    document
-      .querySelector(link.getAttribute("href"))
-      .scrollIntoView({ behavior: "smooth" });
-  });
-});
+// Fade-in animation on scroll
+const fadeElements = document.querySelectorAll(".fade-in");
 
-/* -------- Project Scroll Animation -------- */
-const projectCards = document.querySelectorAll(".card");
+function revealOnScroll() {
+  const windowHeight = window.innerHeight;
 
-const revealProjects = () => {
-  const triggerPoint = window.innerHeight * 0.85;
+  fadeElements.forEach((el, index) => {
+    const elementTop = el.getBoundingClientRect().top;
+    const revealPoint = 100;
 
-  projectCards.forEach(card => {
-    const cardTop = card.getBoundingClientRect().top;
-    if (cardTop < triggerPoint) {
-      card.classList.add("show");
+    if (elementTop < windowHeight - revealPoint) {
+      setTimeout(() => {
+        el.style.opacity = "1";
+        el.style.transform = "translateY(0)";
+      }, index * 120); // smooth stagger effect
     }
-  });
-};
-
-window.addEventListener("scroll", revealProjects);
-window.addEventListener("load", revealProjects);
-
-/* -------- Contact Form (Demo) -------- */
-const form = document.querySelector(".contact-form");
-
-if (form) {
-  form.addEventListener("submit", e => {
-    e.preventDefault();
-    alert("Thank you Shaik Naseer! Your message has been sent.");
-    form.reset();
   });
 }
 
+// Run on load and scroll
+window.addEventListener("scroll", revealOnScroll);
+window.addEventListener("load", revealOnScroll);
