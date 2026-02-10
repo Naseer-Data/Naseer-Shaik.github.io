@@ -4,170 +4,187 @@
   <meta charset="UTF-8">
   <title>Shaik Naseer |Entry Level Data Scientist</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-  <h1>Shaik Naseer</h1>
+<!-- SOCIAL ICON BAR -->
+<div class="social-bar">
+  <a href="https://github.com/Naseer-Data" target="_blank"><i class="fab fa-github"></i></a>
+  <a href="www.linkedin.com/in/shaik-naseer-172785294" target="_blank"><i class="fab fa-linkedin"></i></a>
+  <a href="mailto:naseershaikdpts@gmail.com"><i class="fas fa-envelope"></i></a>
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#skills">MySkills</a></li>
+    <li><a href="#certifications">Certifications</a></li>
+    <li><a href="resume.pdf" download>Resume</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HOME -->
+<header id="home" class="hero">
+  <h1>Hi, I'm <span>Shaik Naseer</span></h1>
   <p>Entry-Level Data Scientist | ML | DL | NLP</p>
-  <a href="resume.pdf" class="btn" download>Download Resume</a>
 </header>
 
-<section class="about">
-  <img src="profile.jpg" alt="Shaik Naseer">
-  <div>
-    <h2>About Me</h2>
+<!-- ABOUT -->
+<section id="about">
+  <h2>About Me</h2>
+  <div class="about-box">
+    <img src="profile.jpg" alt="Shaik Naseer">
     <p>
-      Motivated Entry-level Data Scientist with strong knowledge of Python,
-      Data Science, Machine Learning, Deep Learning, and NLP.
-      Skilled in EDA, predictive modeling, and data visualization to support
-      data-driven decisions.
+      I am a motivated Entry-Level Data Scientist with a strong foundation in Python,
+      Data Science, Machine Learning, Deep Learning, and Natural Language Processing (NLP).
+      I have hands-on experience in Exploratory Data Analysis (EDA), data cleaning,
+      feature engineering, and predictive modeling.
+    
+      
+      
     </p>
   </div>
 </section>
 
-<section>
+<!-- EDUCATION -->
+<section id="education">
   <h2>Education</h2>
-  <ul>
-    <li><b>Data Science Certification</b> – EXCELR, Hyderabad (Nov 2025)</li>
-    <li><b>B.Tech (ECE)</b> – Vaagdevi Institute of Technology & Science (2025) – 71%</li>
-    <li><b>Intermediate (MPC)</b> – Vivekananda Junior College (2021)</li>
-    <li><b>SSC</b> – Radiance High School (2019)</li>
-  </ul>
+
+  <div class="card">
+    <h3>Data Science Certification</h3>
+    <p>EXCELR (Raising Excellence), Hyderabad</p>
+    <span>Nov 2025</span>
+  </div>
+
+  <div class="card">
+    <h3>B.Tech – Electronics & Communication Engineering</h3>
+    <p>Vaagdevi Institute of Technology & Science</p>
+    <span>2025 | 71%</span>
+  </div>
+
+  <div class="card">
+    <h3>Intermediate (MPC)</h3>
+    <p>Vivekananda Junior College</p>
+    <span>2021</span>
+  </div>
+
+  <div class="card">
+    <h3>SSC</h3>
+    <p>Radiance High School</p>
+    <span>2019</span>
+  </div>
 </section>
 
-<section>
-  <h2>Skills</h2>
+<!-- PROJECTS -->
+<section id="projects">
+  <h2>Projects</h2>
+
+  <div class="card">
+    <h3>Customer Churn Prediction</h3>
+    <ul>
+      <li>Performed EDA, data cleaning, and feature engineering</li>
+      <li>Built Logistic Regression and Random Forest models</li>
+      <li>Generated insights to reduce customer churn</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>COVID-19 Data Analysis</h3>
+    <ul>
+      <li>Analyzed confirmed, recovered, and death cases</li>
+      <li>Created time-series and country-wise visualizations</li>
+      <li>Identified trends and patterns</li>
+    </ul>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <h2>My Skills</h2>
 
   <div class="skill-group">
-    <h3>Programming Languages</h3>
-    <div class="skills">
-      <span>Python</span>
-      <span>SQL</span>
-    </div>
+    <h3>Programming</h3>
+    <div class="skills"><span>Python</span><span>SQL</span></div>
   </div>
 
   <div class="skill-group">
     <h3>Python Libraries</h3>
     <div class="skills">
-      <span>NumPy</span>
-      <span>Pandas</span>
-      <span>Matplotlib</span>
-      <span>Seaborn</span>
-      <span>Scikit-learn</span>
-    </div>
-  </div>
-
-  <div class="skill-group">
-    <h3>Data Science</h3>
-    <div class="skills">
-      <span>EDA</span>
-      <span>Data Cleaning</span>
-      <span>Feature Engineering</span>
-      <span>Statistics</span>
-      <span>Hypothesis Testing</span>
+      <span>NumPy</span><span>Pandas</span><span>Matplotlib</span>
+      <span>Seaborn</span><span>Scikit-learn</span>
     </div>
   </div>
 
   <div class="skill-group">
     <h3>Machine Learning</h3>
     <div class="skills">
-      <span>Linear Regression</span>
-      <span>Logistic Regression</span>
-      <span>Decision Trees</span>
-      <span>Random Forest</span>
-      <span>KNN</span>
-      <span>Model Evaluation</span>
+      <span>Linear Regression</span><span>Logistic Regression</span>
+      <span>Decision Trees</span><span>Random Forest</span><span>KNN</span>
     </div>
   </div>
 
   <div class="skill-group">
     <h3>Deep Learning</h3>
     <div class="skills">
-      <span>Neural Networks</span>
-      <span>ANN</span>
-      <span>CNN</span>
-      <span>RNN</span>
-      <span>TensorFlow</span>
-      <span>PyTorch</span>
+      <span>ANN</span><span>CNN</span><span>RNN</span>
+      <span>TensorFlow</span><span>PyTorch</span>
     </div>
   </div>
 
   <div class="skill-group">
-    <h3>Natural Language Processing (NLP)</h3>
+    <h3>NLP</h3>
     <div class="skills">
-      <span>Text Preprocessing</span>
-      <span>Tokenization</span>
-      <span>TF-IDF</span>
-      <span>Word Embeddings</span>
-      <span>Sentiment Analysis</span>
+      <span>Tokenization</span><span>TF-IDF</span>
+      <span>Word Embeddings</span><span>Sentiment Analysis</span>
     </div>
   </div>
 
   <div class="skill-group">
-    <h3>Data Visualization</h3>
+    <h3>Tools</h3>
     <div class="skills">
-      <span>Matplotlib</span>
-      <span>Seaborn</span>
-      <span>Power BI</span>
-      <span>Tableau</span>
-      <span>Excel Dashboards</span>
+      <span>Jupyter</span><span>VS Code</span>
+      <span>Git</span><span>GitHub</span>
+      <span>Power BI</span><span>Tableau</span>
     </div>
-  </div>
-
-  <div class="skill-group">
-    <h3>Tools & Platforms</h3>
-    <div class="skills">
-      <span>Jupyter Notebook</span>
-      <span>Google Colab</span>
-      <span>VS Code</span>
-      <span>PyCharm</span>
-      <span>Git</span>
-      <span>GitHub</span>
-    </div>
-  </div>
-
-</section>
-
-<section>
-  <h2>Projects</h2>
-
-  <div class="project">
-    <h3>Customer Churn Prediction</h3>
-    <ul>
-      <li>Performed EDA, data cleaning, encoding, and scaling</li>
-      <li>Built Logistic Regression and Random Forest models</li>
-      <li>Identified key churn drivers and retention insights</li>
-    </ul>
-  </div>
-
-  <div class="project">
-    <h3>COVID-19 Data Analysis</h3>
-    <ul>
-      <li>Analyzed confirmed, recovered, and death cases</li>
-      <li>Created time-series and country-wise visualizations</li>
-      <li>Extracted trends and patterns from real datasets</li>
-    </ul>
   </div>
 </section>
 
-<section>
+<!-- CERTIFICATIONS -->
+<section id="certifications">
   <h2>Certifications</h2>
-  <ul>
-    <li>Data Science Program – EXCELR (Certificate of Excellence)</li>
-    <li>Master’s Program in Data Science – NASSCOM (Gold Category)</li>
-    <li>Introduction to Data Science – Cisco</li>
-    <li>Web Development – Skill Dzire</li>
-    <li>Data Science Digital Badge – Cisco</li>
-  </ul>
+  <div class="card">
+    <p>✔ Data Science Program – EXCELR (Certificate of Excellence)</p>
+    <p>✔ Master’s Program in Data Science – NASSCOM (Gold Category)</p>
+    <p>✔ Introduction to Data Science – Cisco</p>
+    <p>✔ Web Development – Skill Dzire</p>
+    <p>✔ Data Science Digital Badge – Cisco</p>
+  </div>
 </section>
 
-<section>
-  <h2>Contact</h2>
-  <p>Email: <a href="mailto:naseershaikdpts@gmail.com">naseershaikdpts@gmail.com</a></p>
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Contact Me</h2>
+
+  <form class="contact-form" onsubmit="sendMessage(event)">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+
+  <p>Email: naseershaikdpts@gmail.com</p>
   <p>Phone: +91 7816074032</p>
-  <p>LinkedIn: <a href="https://www.linkedin.com/in/shaik-naseer" target="_blank">shaik-naseer</a></p>
 </section>
 
 <footer>
